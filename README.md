@@ -1,5 +1,6 @@
 # Remote-Connections-Lockdown
 
+# HackerScumBeGone.cmd
 🔒 What this script does
 
 Turns off RAS entirely unless you explicitly need it.
@@ -9,8 +10,7 @@ Blocks IPv6 spoofing vectors (router advertisements, fake IP requests).
 Locks down firewall to block inbound traffic by default.
 Disables Remote Desktop & SMBv1 — two common hijack targets.
 
-# Remote-Connections-Lockdown
-
+# ExtraSecurityDoubleDownScript.cmd
 🔒 What this script does
 
 No Remote Desktop / Remote Assistance → nobody can view/control your screen.
@@ -20,15 +20,36 @@ Firewall locked down → inbound blocked, outbound allowed (so Roblox still work
 RAS disabled → no dial‑in or VPN hijacking.
 Remote Registry & Telnet disabled → no hidden remote management.
 
+# LastResortIHateMyLife.cmd 
+
+🔒 What this does and why it’s safe
+Blocks inbound connections by default while keeping outbound open, using netsh advfirewall contexts and rule groups documented by Microsoft.
+Shuts down RAS dial-in paths, disables IPv6 router discovery and address requests, and enforces server-only roles—all via netsh ras and interface contexts.
+Disables legacy tunnels (6to4, Teredo, ISATAP) and NetBIOS behaviors that advertise your machine.
+Removes insecure Wi‑Fi profiles and resets Winsock to clear malicious hooks.
+Turns off Remote Desktop, Remote Assistance, Remote Registry, Telnet, ICS, and NetLogon; disables SMBv1 and file/printer sharing firewall groups.
+Keeps outbound DNS and HTTPS open, plus general outbound rules for gaming traffic so gaming services can connect.
+
 🎮 Gaming Compatibility
 
 Outbound traffic (your PC → Roblox servers) is still allowed.
 Inbound traffic (other PCs → your PC) is blocked unless you explicitly allow it.
 This means you can still play Roblox and other online games, but nobody can use your PC as a remote access point.
+If any game component fails to connect, temporarily disable only the specific block rule that conflicts, but keep inbound default block in place.
 
 #This will not block your own access to the internet you will still have normal
 internet connection, it just blocks others from connecting to yours#
 
+# RestoreAll.cmd
+🔄 Rollback Script (Undo Lockdown)
+
+✅ What this rollback does
+Resets firewall to default inbound/outbound policies.
+Re-enables RAS and WAN ports.
+Restores IPv6 discovery and tunneling features.
+Re-enables Remote Desktop, Remote Assistance, Remote Registry, Telnet, ICS, Netlogon, SMBv1.
+Deletes custom block/allow rules we added earlier.
+Resets Winsock to defaults again.
 
 ✅ How to use
 
