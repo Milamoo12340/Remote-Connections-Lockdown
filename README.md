@@ -1,6 +1,7 @@
 # Remote-Connections-Lockdown
 
 🔒 What this script does
+
 Turns off RAS entirely unless you explicitly need it.
 
 Closes WAN ports so no dial‑in connections can sneak through.
