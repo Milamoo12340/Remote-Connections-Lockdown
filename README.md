@@ -33,7 +33,7 @@ and if someone writes malicious code, or changes any of these values to the oppo
 it will enable Remote Access to your PC, stay smart, stay safe, stay alert, and goodluck.
 
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netsh-ras
-^ The above link shows and describes exacly what we are locking down, and the commands you can run for security,
+The Windows link shows and describes exacly what we are locking down, and the commands you can run for security,
 most of which we are doing today.
 This script is defensive only — it doesn’t interfere with other people’s computers, it just makes yours much harder to hijack
 -Milamoo12340
