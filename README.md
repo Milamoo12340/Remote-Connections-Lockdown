@@ -37,8 +37,7 @@
 -This means you can still play games online like Roblox and other online games, but nobody can use your PC as a remote access point.
 -If any game component fails to connect, temporarily disable only the specific block rule that conflicts, but keep inbound default block in place.
 
-# This will not block your own access to the internet you will still have normal
-internet connection, it just blocks others from connecting to yours #
+# This will not block your own access to the internet you will still have normal internet connection, it just blocks others from connecting to you computer, network and files #
 
 # RestoreAll.cmd
 🔄 Rollback Script (Undo Lockdown)
